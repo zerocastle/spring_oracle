@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 public class BoarderVO {
 
-	private int bno;
+//	private int bno;
 	private String title;
 	private String context;
 	private String writer;
@@ -15,13 +15,13 @@ public class BoarderVO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public int getBno() {
-		return bno;
-	}
+//	public int getBno() {
+//		return bno;
+//	}
 
-	public void setBno(int bno) {
-		this.bno = bno;
-	}
+//	public void setBno(int bno) {
+//		this.bno = bno;
+//	}
 
 	public String getTitle() {
 		return title;
@@ -65,7 +65,7 @@ public class BoarderVO {
 
 	@Override
 	public String toString() {
-		return "Boarder [bno=" + bno + ", title=" + title + ", context=" + context + ", writer=" + writer + ", regdate="
+		return "Boarder [title=" + title + ", context=" + context + ", writer=" + writer + ", regdate="
 				+ regdate + ", viewcnt=" + viewcnt + "]";
 	}
 	

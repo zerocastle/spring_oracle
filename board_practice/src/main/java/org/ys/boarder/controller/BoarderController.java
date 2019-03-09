@@ -21,9 +21,12 @@ public class BoarderController {
 	private IBoarderService service;
 
 	@RequestMapping(value = "insert", method = RequestMethod.POST)
-	public void insert(BoarderVO board, Model model, RedirectAttributes re) throws Exception {
+	public String insert(BoarderVO boardVO, Model model, RedirectAttributes re) throws Exception {
 		logger.info("¿Œº≠∆Æ");
-		logger.info(board.toString());
+		logger.info(boardVO.toString());
+		service.insertService(boardVO);
+		re.addAttribute("msg", "success");
+		return "redirect:selectListAll";
 	}
 
 	@RequestMapping(value = "selectListAll", method = RequestMethod.GET)

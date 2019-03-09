@@ -6,8 +6,8 @@ import org.ys.boarder.domain.BoarderVO;
 
 public interface IBoarderService {
 
-	public void insertService(BoarderVO boarderVo);
+	public void insertService(BoarderVO boarderVo) throws Exception;
 
-	public List<BoarderVO> selectBoarderAllService(BoarderVO boarder);
+	public List<BoarderVO> selectBoarderAllService(BoarderVO boarder) throws Exception;
 
 }

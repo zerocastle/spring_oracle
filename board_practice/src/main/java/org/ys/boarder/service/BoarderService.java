@@ -9,22 +9,22 @@ import org.ys.boarder.domain.BoarderVO;
 
 @Service
 public class BoarderService implements IBoarderService {
-	
+
 	@Autowired
 	private IBoarderDao dao;
 
 	@Override
-	public void insertService(BoarderVO boarderVo) {
+	public void insertService(BoarderVO boarderVo) throws Exception{
 		// TODO Auto-generated method stub
-
+		System.out.println("¿Œº≠∆Æ=======================================================================================");
+		dao.insertDao(boarderVo);
+		
 	}
 
 	@Override
-	public List<BoarderVO> selectBoarderAllService(BoarderVO boarder) {
+	public List<BoarderVO> selectBoarderAllService(BoarderVO boarder) throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.selectBoarderAllDao(boarder);
 	}
-
-
 
 }
