@@ -6,7 +6,7 @@ public class BoarderVO {
 
 //	private int bno;
 	private String title;
-	private String context;
+	private String content;
 	private String writer;
 	private Timestamp regdate;
 	private int viewcnt;
@@ -31,12 +31,12 @@ public class BoarderVO {
 		this.title = title;
 	}
 
-	public String getContext() {
-		return context;
+	public String getContent() {
+		return content;
 	}
 
-	public void setContext(String context) {
-		this.context = context;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public String getWriter() {
@@ -65,7 +65,7 @@ public class BoarderVO {
 
 	@Override
 	public String toString() {
-		return "Boarder [title=" + title + ", context=" + context + ", writer=" + writer + ", regdate="
+		return "Boarder [title=" + title + ", content=" + content + ", writer=" + writer + ", regdate="
 				+ regdate + ", viewcnt=" + viewcnt + "]";
 	}
 	

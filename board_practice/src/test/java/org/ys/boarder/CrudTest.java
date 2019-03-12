@@ -25,7 +25,7 @@ public class CrudTest {
 		logger.info("test");
 		BoarderVO boarder = new BoarderVO();
 
-		boarder.setContext("context");
+		boarder.setContent("context");
 		boarder.setTitle("title");
 		boarder.setWriter("writer");
 		boarder.setViewcnt(0);
